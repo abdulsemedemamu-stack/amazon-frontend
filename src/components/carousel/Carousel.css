@@ -1,0 +1,15 @@
+.carousel_container {
+  width: 100%;
+}
+
+.carousel .slide img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .carousel .slide img {
+    height: 200px;
+  }
+}

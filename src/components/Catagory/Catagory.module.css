@@ -1,0 +1,104 @@
+/* CARD */
+/* GLOBAL (Amazon background) */
+body {
+  margin: 0;
+  background-color: #e3e6e6;
+  font-family: Arial, sans-serif;
+}
+
+/* SECTION WRAPPER */
+.catagory_section {
+  margin: 40px 0;
+}
+
+/* GRID CONTAINER */
+.catagory_container {
+  position: relative;
+  margin-top: -10%;
+  padding: 20px 40px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.catagory {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.catagory:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.catagory img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* LINKS */
+.catagory a {
+  text-decoration: none;
+  color: #0f1111;
+}
+
+/* TITLE */
+.catagory h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* BUTTON TEXT */
+.catagory p {
+  font-size: 13px;
+  font-weight: bold;
+  color: #007185;
+}
+
+/* HOVER LINK COLOR */
+.catagory p:hover {
+  color: #c7511f;
+}
+
+/* 🔥 RESPONSIVE DESIGN */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .catagory_container {
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .catagory_container {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .catagory {
+    padding: 10px;
+  }
+
+  .catagory h2 {
+    font-size: 16px;
+  }
+
+  .catagory img {
+    height: 150px;
+  }
+}
